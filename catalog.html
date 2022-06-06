@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Каталог</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20220530072940">
+	<meta name="robots" content="noindex, nofollow">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<div class="header-wrapper">
+			<header class="header">
+				<div class="header__container">
+					<div class="header__top">
+
+						<div class="header__menu menu">
+							<nav class="menu__body">
+								<ul class="menu__list">
+									<li class="menu__item"><a href="" class="menu__link link-hover">Искусство</a></li>
+									<li class="menu__item"><a target="_blank" href="catalog.html" class="menu__link link-hover">Каталог</a></li>
+									<li class="menu__item"><a target="_blank" href="collections.html" class="menu__link link-hover">Коллекции</a></li>
+									<li class="menu__item"><a target="_blank" href="product-page.html" class="menu__link link-hover">Товар</a></li>
+								</ul>
+							</nav>
+						</div>
+						<button type="button" class="menu__icon icon-menu">
+							<span></span>
+						</button>
+						<a href="#" class="header__logo logo"><img src="img/icons/logo.svg" alt="Лого сайта"></a>
+						<div data-da=".header-bottom, 991.98, 1" class="header__search search-header">
+							<input id="search" class="search-header__input" type="text" name="" placeholder="Search">
+						</div>
+						<div class="header__actions actions-header">
+							<div class="actions-header__inner">
+								<select name="rate[]" class="actions-header__rate rate">
+									<option value="1" selected>$</option>
+									<option value="2">₽</option>
+									<option value="3">€</option>
+								</select>
+								<select name="language[]" class="actions-header__language language">
+									<option value="1" selected>EN</option>
+									<option value="2">RUS</option>
+									<option value="3">UKR</option>
+									<option value="4">POL</option>
+								</select>
+							</div>
+						</div>
+						<div class="header__user user-header">
+							<div class="user-header__inner">
+								<a data-popup="#popupBag" href="#" class="user-header__bag"><img src="img/icons/shopping-bag.svg" alt=""></a>
+								<a data-popup="#popupRegistration" href="#" class="user-header__profile"><img src="img/icons/account.svg" alt=""></a>
+								<a href="#" class="user-header__favorite _icon-favorite"></a>
+							</div>
+						</div>
+					</div>
+					<div class="header__bottom header-bottom"></div>
+
+				</div>
+			</header>
+		</div>
+
+		<main class="page">
+
+			<div class="catalog">
+				<div class="catalog__container">
+					<div class="sorting">
+						<div class="sorting__item">
+							<div class="catalog__title sorting__title title">искусство </div>
+							<div class="sorting__select">
+								<select name="form[]" class="form">
+									<option value="1" selected>Сортировать</option>
+									<option value="2">Все новые</option>
+									<option value="3">По популярности</option>
+									<option value="4">По скидке</option>
+									<option value="5">От самой низкой цены </option>
+									<option value="6">От самой высокой цены </option>
+								</select>
+							</div>
+						</div>
+					</div>
+					<div class="catalog__wrapper">
+						<form data-spollers action="#" class="catalog__filter filter">
+							<div class="filter__item">
+								<div data-spoller class="filter__title _icon-arrow">Фильтры</div>
+								<div data-spollers class="filter__filters">
+									<button class="checkbox__additional _icon-arrow">Сбросить все</button>
+								</div>
+							</div>
+							<div class="filter__item">
+								<div data-spoller class="filter__title _icon-arrow">Категории</div>
+								<div data-spollers class="filter__checkboxes">
+									<div class="checkbox">
+										<input id="paintingCheckbox" data-error="Ошибка" class="checkbox__input" type="checkbox" name="form[]">
+										<label for="paintingCheckbox" class="checkbox__label"><span class="checkbox__text">живопись </span></label>
+										<div class="checkbox__count">50</div>
+									</div>
+									<div class="checkbox">
+										<input id="graphicCheckbox" data-error="Ошибка" class="checkbox__input" type="checkbox" name="form[]">
+										<label for="graphicCheckbox" class="checkbox__label"><span class="checkbox__text">графика </span></label>
+										<div class="checkbox__count">140</div>
+									</div>
+									<div class="checkbox">
+										<input id="printsCheckbox" data-error="Ошибка" class="checkbox__input" type="checkbox" name="form[]">
+										<label for="printsCheckbox" class="checkbox__label"><span class="checkbox__text">принты </span></label>
+										<div class="checkbox__count">200</div>
+									</div>
+									<div class="checkbox">
+										<input id="sculptureCheckbox" data-error="Ошибка" class="checkbox__input" type="checkbox" name="form[]">
+										<label for="sculptureCheckbox" class="checkbox__label"><span class="checkbox__text">скульптура </span></label>
+										<div class="checkbox__count">4</div>
+									</div>
+									<div class="checkbox">
+										<input id="digitalCheckbox" data-error="Ошибка" class="checkbox__input" type="checkbox" name="form[]">
+										<label for="digitalCheckbox" class="checkbox__label"><span class="checkbox__text">диджитал арт </span></label>
+										<div class="checkbox__count">180</div>
+									</div>
+									<div class="checkbox">
+										<input id="photoCheckbox" data-error="Ошибка" class="checkbox__input" type="checkbox" name="form[]">
+										<label for="photoCheckbox" class="checkbox__label"><span class="checkbox__text">фотография </span></label>
+										<div class="checkbox__count">20</div>
+									</div>
+									<div class="checkbox">
+										<input id="printedGraphicCheckbox" data-error="Ошибка" class="checkbox__input" type="checkbox" name="form[]">
+										<label for="printedGraphicCheckbox" class="checkbox__label"><span class="checkbox__text">Тиражная графика </span></label>
+										<div class="checkbox__count">20</div>
+									</div>
+									<button class="checkbox__additional _icon-arrow">Скрыть</button>
+								</div>
+							</div>
+							<div class="filter__item">
+								<div data-spoller class="filter__title _icon-arrow">темы</div>
+								<div data-spollers class="filter__checkboxes">
+									<div class="checkbox">
+										<input id="abstractionCheckbox" data-error="Ошибка" class="checkbox__input" type="checkbox" name="form[]">
+										<label for="abstractionCheckbox" class="checkbox__label"><span class="checkbox__text"> Абстракция</span></label>
+										<div class="checkbox__count">50</div>
+									</div>
+									<div class="checkbox">
+										<input id="avantGardeCheckbox" data-error="Ошибка" class="checkbox__input" type="checkbox" name="form[]">
+										<label for="avantGardeCheckbox" class="checkbox__label"><span class="checkbox__text"> Авангардизм </span></label>
+										<div class="checkbox__count">140</div>
+									</div>
+									<div class="checkbox">
+										<input id="architectureCheckbox" data-error="Ошибка" class="checkbox__input" type="checkbox" name="form[]">
+										<label for="architectureCheckbox" class="checkbox__label"><span class="checkbox__text"> Архитектура </span></label>
+										<div class="checkbox__count">200</div>
+									</div>
+									<div class="checkbox">
+										<input id="citiesCheckbox" data-error="Ошибка" class="checkbox__input" type="checkbox" name="form[]">
+										<label for="citiesCheckbox" class="checkbox__label"><span class="checkbox__text"> Города </span></label>
+										<div class="checkbox__count">4</div>
+									</div>
+									<div class="checkbox">
+										<input id="rusticMotifCheckbox" data-error="Ошибка" class="checkbox__input" type="checkbox" name="form[]">
+										<label for="rusticMotifCheckbox" class="checkbox__label"><span class="checkbox__text">Деревенский мотив </span></label>
+										<div class="checkbox__count">180</div>
+									</div>
+									<div class="checkbox">
+										<input id="expressionismCheckbox" data-error="Ошибка" class="checkbox__input" type="checkbox" name="form[]">
+										<label for="expressionismCheckbox" class="checkbox__label"><span class="checkbox__text">Экспрессионизм </span></label>
+										<div class="checkbox__count">20</div>
+									</div>
+									<button class="checkbox__additional _icon-arrow">Все</button>
+								</div>
+							</div>
+							<div class="filter__item">
+								<div data-spoller class="filter__title _icon-arrow">стиль</div>
+								<div data-spollers class="filter__checkboxes">
+									<div class="checkbox">
+										<input id="abstractionismCheckbox" data-error="Ошибка" class="checkbox__input" type="checkbox" name="form[]">
+										<label for="abstractionismCheckbox" class="checkbox__label"><span class="checkbox__text">Абстракционизм</span></label>
+										<div class="checkbox__count">50</div>
+									</div>
+									<div class="checkbox">
+										<input id="artDecoCheckbox" data-error="Ошибка" class="checkbox__input" type="checkbox" name="form[]">
+										<label for="artDecoCheckbox" class="checkbox__label"><span class="checkbox__text">Арт Деко</span></label>
+										<div class="checkbox__count">140</div>
+									</div>
+									<div class="checkbox">
+										<input id="bustCheckbox" data-error="Ошибка" class="checkbox__input" type="checkbox" name="form[]">
+										<label for="bustCheckbox" class="checkbox__label"><span class="checkbox__text">Бюст</span></label>
+										<div class="checkbox__count">200</div>
+									</div>
+									<div class="checkbox">
+										<input id="illustrationCheckbox" data-error="Ошибка" class="checkbox__input" type="checkbox" name="form[]">
+										<label for="illustrationCheckbox" class="checkbox__label"><span class="checkbox__text">Иллюстрация</span></label>
+										<div class="checkbox__count">4</div>
+									</div>
+									<div class="checkbox">
+										<input id="impressionismArtCheckbox" data-error="Ошибка" class="checkbox__input" type="checkbox" name="form[]">
+										<label for="impressionismArtCheckbox" class="checkbox__label"><span class="checkbox__text">Импрессионизм арт</span></label>
+										<div class="checkbox__count">180</div>
+									</div>
+									<div class="checkbox">
+										<input id="objectCheckbox" data-error="Ошибка" class="checkbox__input" type="checkbox" name="form[]">
+										<label for="objectCheckbox" class="checkbox__label"><span class="checkbox__text">Объект</span></label>
+										<div class="checkbox__count">20</div>
+									</div>
+								</div>
+							</div>
+							<div class="filter__item">
+								<div data-spoller class="filter__title _icon-arrow">цвет</div>
+								<div data-spollers class="filter__checkboxes">
+									<div class="checkbox-color">
+										<input id="multicolorCheckbox" data-error="Ошибка" class="checkbox-color__input" type="checkbox" name="form[]">
+										<label for="multicolorCheckbox" class="checkbox-color__label checkbox-color__label_multicolor"><span class="checkbox-color__text">Мультицвет</span></label>
+									</div>
+									<div class="checkbox">
+										<input id="redCheckbox" data-error="Ошибка" class="checkbox-color__input" type="checkbox" name="form[]">
+										<label for="redCheckbox" class="checkbox-color__label checkbox-color__label_red"><span class="checkbox-color__text">Красный</span></label>
+									</div>
+									<div class="checkbox">
+										<input id="whiteCheckbox" data-error="Ошибка" class="checkbox-color__input" type="checkbox" name="form[]">
+										<label for="whiteCheckbox" class="checkbox-color__label checkbox-color__label_black"><span class="checkbox-color__text">Белый</span></label>
+									</div>
+									<div class="checkbox">
+										<input id="yellowCheckbox" data-error="Ошибка" class="checkbox-color__input" type="checkbox" name="form[]">
+										<label for="yellowCheckbox" class="checkbox-color__label checkbox-color__label_yellow"><span class="checkbox-color__text">Желтый</span></label>
+									</div>
+									<div class="checkbox">
+										<input id="greenCheckbox" data-error="Ошибка" class="checkbox-color__input" type="checkbox" name="form[]">
+										<label for="greenCheckbox" class="checkbox-color__label checkbox-color__label_green"><span class="checkbox-color__text">Зеленый</span></label>
+									</div>
+									<div class="checkbox">
+										<input id="blueCheckbox" data-error="Ошибка" class="checkbox-color__input" type="checkbox" name="form[]">
+										<label for="blueCheckbox" class="checkbox-color__label checkbox-color__label_blue"><span class="checkbox-color__text">Синий</span></label>
+									</div>
+									<button class="checkbox__additional _icon-arrow">Все</button>
+								</div>
+							</div>
+							<div class="filter__item">
+								<div data-spoller class="filter__title _icon-arrow">цена</div>
+								<div data-spollers class="filter__checkboxes">
+									<div class="range-price" id="rangePrice"></div>
+								</div>
+							</div>
+							<div class="filter__item">
+								<div data-spoller class="filter__title _icon-arrow">техника</div>
+								<div data-spollers class="filter__checkboxes">
+									<span class="filter__empty">Тут пока-что пусто:(</span>
+								</div>
+							</div>
+							<div class="filter__item">
+								<div data-spoller class="filter__title _icon-arrow">ориентация</div>
+								<div data-spollers class="filter__checkboxes">
+									<span class="filter__empty">Тут пока-что пусто:(</span>
+								</div>
+							</div>
+							<div class="filter__item">
+								<div data-spoller class="filter__title _icon-arrow">размер</div>
+								<div data-spollers class="filter__checkboxes">
+									<span class="filter__empty">Тут пока-что пусто:(</span>
+								</div>
+							</div>
+						</form>
+						<div class="catalog__items">
+							<div class="slider-products__slide art-slider__slide">
+								<div class="slide-products__picture slide-products-picture">
+									<div class="slide-products-picture__header">
+										<div class="slide-products-picture__stock">new</div>
+										<a href="#" class="slide-products-picture__favorite _icon-favorite"></a>
+									</div>
+									<a href="#" class="slide-products-picture__img"><picture><source srcset="img/art/image-1.webp" type="image/webp"><img src="img/art/image-1.png" alt="картинка"></picture></a>
+								</div>
+								<div class="slide-products__info slide-products-info">
+									<div class="slide-products-info__author">Shell story in Californie </div>
+									<a href="#" class="slide-products-info__name">На Финском заливе</a>
+									<div class="slide-products-info__size">60 x 159 cm</div>
+									<div class="slide-products-info__footer">
+										<div class="slide-products-info__price">140 000 ₽</div>
+										<a href="#" class="slide-products-info__bag _icon-shopping-bag"></a>
+									</div>
+								</div>
+							</div>
+							<div class="slider-products__slide art-slider__slide">
+								<div class="slide-products__picture slide-products-picture">
+									<div class="slide-products-picture__header">
+										<div class="slide-products-picture__stock">new</div>
+										<a href="#" class="slide-products-picture__favorite _icon-favorite"></a>
+									</div>
+									<a href="#" class="slide-products-picture__img"><picture><source srcset="img/art/image-2.webp" type="image/webp"><img src="img/art/image-2.png" alt="картинка"></picture></a>
+								</div>
+								<div class="slide-products__info slide-products-info">
+									<div class="slide-products-info__author">Shell story in Californie </div>
+									<a href="#" class="slide-products-info__name">На Финском заливе</a>
+									<div class="slide-products-info__size">60 x 159 cm</div>
+									<div class="slide-products-info__footer">
+										<div class="slide-products-info__price">140 000 ₽</div>
+										<a href="#" class="slide-products-info__bag _icon-shopping-bag"></a>
+									</div>
+								</div>
+							</div>
+							<div class="slider-products__slide art-slider__slide">
+								<div class="slide-products__picture slide-products-picture">
+									<div class="slide-products-picture__header">
+										<div class="slide-products-picture__stock">new</div>
+										<a href="#" class="slide-products-picture__favorite _icon-favorite"></a>
+									</div>
+									<a href="#" class="slide-products-picture__img"><picture><source srcset="img/art/image-3.webp" type="image/webp"><img src="img/art/image-3.png" alt="картинка"></picture></a>
+								</div>
+								<div class="slide-products__info slide-products-info">
+									<div class="slide-products-info__author">Shell story in Californie </div>
+									<a href="#" class="slide-products-info__name">На Финском заливе</a>
+									<div class="slide-products-info__size">60 x 159 cm</div>
+									<div class="slide-products-info__footer">
+										<div class="slide-products-info__price">140 000 ₽</div>
+										<a href="#" class="slide-products-info__bag _icon-shopping-bag"></a>
+									</div>
+								</div>
+							</div>
+							<div class="slider-products__slide art-slider__slide">
+								<div class="slide-products__picture slide-products-picture">
+									<div class="slide-products-picture__header">
+										<div class="slide-products-picture__stock">new</div>
+										<a href="#" class="slide-products-picture__favorite _icon-favorite"></a>
+									</div>
+									<a href="#" class="slide-products-picture__img"><picture><source srcset="img/art/image-4.webp" type="image/webp"><img src="img/art/image-4.png" alt="картинка"></picture></a>
+								</div>
+								<div class="slide-products__info slide-products-info">
+									<div class="slide-products-info__author">Shell story in Californie </div>
+									<a href="#" class="slide-products-info__name">На Финском заливе</a>
+									<div class="slide-products-info__size">60 x 159 cm</div>
+									<div class="slide-products-info__footer">
+										<div class="slide-products-info__price">140 000 ₽</div>
+										<a href="#" class="slide-products-info__bag _icon-shopping-bag"></a>
+									</div>
+								</div>
+							</div>
+							<div class="slider-products__slide art-slider__slide">
+								<div class="slide-products__picture slide-products-picture">
+									<div class="slide-products-picture__header">
+										<div class="slide-products-picture__stock">new</div>
+										<a href="#" class="slide-products-picture__favorite _icon-favorite"></a>
+									</div>
+									<a href="#" class="slide-products-picture__img"><picture><source srcset="img/art/image-5.webp" type="image/webp"><img src="img/art/image-5.png" alt="картинка"></picture></a>
+								</div>
+								<div class="slide-products__info slide-products-info">
+									<div class="slide-products-info__author">Shell story in Californie </div>
+									<a href="#" class="slide-products-info__name">На Финском заливе</a>
+									<div class="slide-products-info__size">60 x 159 cm</div>
+									<div class="slide-products-info__footer">
+										<div class="slide-products-info__price">140 000 ₽</div>
+										<a href="#" class="slide-products-info__bag _icon-shopping-bag"></a>
+									</div>
+								</div>
+							</div>
+							<div class="slider-products__slide art-slider__slide">
+								<div class="slide-products__picture slide-products-picture">
+									<div class="slide-products-picture__header">
+										<div class="slide-products-picture__stock">new</div>
+										<a href="#" class="slide-products-picture__favorite _icon-favorite"></a>
+									</div>
+									<a href="#" class="slide-products-picture__img"><picture><source srcset="img/art/image-6.webp" type="image/webp"><img src="img/art/image-6.png" alt="картинка"></picture></a>
+								</div>
+								<div class="slide-products__info slide-products-info">
+									<div class="slide-products-info__author">Shell story in Californie </div>
+									<a href="#" class="slide-products-info__name">На Финском заливе</a>
+									<div class="slide-products-info__size">60 x 159 cm</div>
+									<div class="slide-products-info__footer">
+										<div class="slide-products-info__price">140 000 ₽</div>
+										<a href="#" class="slide-products-info__bag _icon-shopping-bag"></a>
+									</div>
+								</div>
+							</div>
+							<div class="slider-products__slide art-slider__slide">
+								<div class="slide-products__picture slide-products-picture">
+									<div class="slide-products-picture__header">
+										<div class="slide-products-picture__stock">new</div>
+										<a href="#" class="slide-products-picture__favorite _icon-favorite"></a>
+									</div>
+									<a href="#" class="slide-products-picture__img"><picture><source srcset="img/art/image-7.webp" type="image/webp"><img src="img/art/image-7.png" alt="картинка"></picture></a>
+								</div>
+								<div class="slide-products__info slide-products-info">
+									<div class="slide-products-info__author">Shell story in Californie </div>
+									<a href="#" class="slide-products-info__name">На Финском заливе</a>
+									<div class="slide-products-info__size">60 x 159 cm</div>
+									<div class="slide-products-info__footer">
+										<div class="slide-products-info__price">140 000 ₽</div>
+										<a href="#" class="slide-products-info__bag _icon-shopping-bag"></a>
+									</div>
+								</div>
+							</div>
+							<div class="slider-products__slide art-slider__slide">
+								<div class="slide-products__picture slide-products-picture">
+									<div class="slide-products-picture__header">
+										<div class="slide-products-picture__stock">new</div>
+										<a href="#" class="slide-products-picture__favorite _icon-favorite"></a>
+									</div>
+									<a href="#" class="slide-products-picture__img"><picture><source srcset="img/art/image-8.webp" type="image/webp"><img src="img/art/image-8.png" alt="картинка"></picture></a>
+								</div>
+								<div class="slide-products__info slide-products-info">
+									<div class="slide-products-info__author">Shell story in Californie </div>
+									<a href="#" class="slide-products-info__name">На Финском заливе</a>
+									<div class="slide-products-info__size">60 x 159 cm</div>
+									<div class="slide-products-info__footer">
+										<div class="slide-products-info__price">140 000 ₽</div>
+										<a href="#" class="slide-products-info__bag _icon-shopping-bag"></a>
+									</div>
+								</div>
+							</div>
+							<div class="slider-products__slide art-slider__slide">
+								<div class="slide-products__picture slide-products-picture">
+									<div class="slide-products-picture__header">
+										<div class="slide-products-picture__stock">new</div>
+										<a href="#" class="slide-products-picture__favorite _icon-favorite"></a>
+									</div>
+									<a href="#" class="slide-products-picture__img"><picture><source srcset="img/art/image-9.webp" type="image/webp"><img src="img/art/image-9.png" alt="картинка"></picture></a>
+								</div>
+								<div class="slide-products__info slide-products-info">
+									<div class="slide-products-info__author">Shell story in Californie </div>
+									<a href="#" class="slide-products-info__name">На Финском заливе</a>
+									<div class="slide-products-info__size">60 x 159 cm</div>
+									<div class="slide-products-info__footer">
+										<div class="slide-products-info__price">140 000 ₽</div>
+										<a href="#" class="slide-products-info__bag _icon-shopping-bag"></a>
+									</div>
+								</div>
+							</div>
+							<div class="slider-products__slide art-slider__slide">
+								<div class="slide-products__picture slide-products-picture">
+									<div class="slide-products-picture__header">
+										<div class="slide-products-picture__stock">new</div>
+										<a href="#" class="slide-products-picture__favorite _icon-favorite"></a>
+									</div>
+									<a href="#" class="slide-products-picture__img"><picture><source srcset="img/art/image-10.webp" type="image/webp"><img src="img/art/image-10.png" alt="картинка"></picture></a>
+								</div>
+								<div class="slide-products__info slide-products-info">
+									<div class="slide-products-info__author">Shell story in Californie </div>
+									<a href="#" class="slide-products-info__name">На Финском заливе</a>
+									<div class="slide-products-info__size">60 x 159 cm</div>
+									<div class="slide-products-info__footer">
+										<div class="slide-products-info__price">140 000 ₽</div>
+										<a href="#" class="slide-products-info__bag _icon-shopping-bag"></a>
+									</div>
+								</div>
+							</div>
+							<div class="slider-products__slide art-slider__slide">
+								<div class="slide-products__picture slide-products-picture">
+									<div class="slide-products-picture__header">
+										<div class="slide-products-picture__stock">new</div>
+										<a href="#" class="slide-products-picture__favorite _icon-favorite"></a>
+									</div>
+									<a href="#" class="slide-products-picture__img"><picture><source srcset="img/art/image-11.webp" type="image/webp"><img src="img/art/image-11.png" alt="картинка"></picture></a>
+								</div>
+								<div class="slide-products__info slide-products-info">
+									<div class="slide-products-info__author">Shell story in Californie </div>
+									<a href="#" class="slide-products-info__name">На Финском заливе</a>
+									<div class="slide-products-info__size">60 x 159 cm</div>
+									<div class="slide-products-info__footer">
+										<div class="slide-products-info__price">140 000 ₽</div>
+										<a href="#" class="slide-products-info__bag _icon-shopping-bag"></a>
+									</div>
+								</div>
+							</div>
+							<div class="slider-products__slide art-slider__slide">
+								<div class="slide-products__picture slide-products-picture">
+									<div class="slide-products-picture__header">
+										<div class="slide-products-picture__stock">new</div>
+										<a href="#" class="slide-products-picture__favorite _icon-favorite"></a>
+									</div>
+									<a href="#" class="slide-products-picture__img"><picture><source srcset="img/art/image-12.webp" type="image/webp"><img src="img/art/image-12.png" alt="картинка"></picture></a>
+								</div>
+								<div class="slide-products__info slide-products-info">
+									<div class="slide-products-info__author">Shell story in Californie </div>
+									<a href="#" class="slide-products-info__name">На Финском заливе</a>
+									<div class="slide-products-info__size">60 x 159 cm</div>
+									<div class="slide-products-info__footer">
+										<div class="slide-products-info__price">140 000 ₽</div>
+										<a href="#" class="slide-products-info__bag _icon-shopping-bag"></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div data-spollers='767.98' class="footer__row">
+					<div class="footer__column">
+						<div data-spoller class="footer__title">ПОКУПАТЕЛЯМ</div>
+						<nav class="footer__nav">
+							<ul class="footer__list">
+								<li class="footer__item"><a href="#" class="footer__link link-hover">Как сделать заказ</a></li>
+								<li class="footer__item"><a href="#" class="footer__link link-hover">Оплата и доставка</a></li>
+								<li class="footer__item"><a href="#" class="footer__link link-hover">Возврат товара</a></li>
+								<li class="footer__item"><a href="#" class="footer__link link-hover">Публичная оферта</a></li>
+								<li class="footer__item"><a href="#" class="footer__link link-hover">Политика конфиденциальности</a></li>
+							</ul>
+						</nav>
+					</div>
+					<div class="footer__column">
+						<div data-spoller class="footer__title">КОНТАКТЫ</div>
+						<nav class="footer__nav">
+							<ul class="footer__list">
+								<li class="footer__item"><a href="tel:78124380114" class="footer__link link-hover">+7 (812) 438-01-14</a></li>
+								<li class="footer__item"><a href="mailto:molbertgallery.ru" class="footer__link link-hover"><span>info@molbertgallery.ru.</span></a></li>
+								<li class="footer__item"><a href="#" class="footer__link link-hover">Пн-Вс 09.00-20.00 </a></li>
+								<li class="footer__item"><a href="#" class="footer__link link-hover">191186, Россия, г. Санкт-Петербург,</a></li>
+								<li class="footer__item"><a href="#" class="footer__link link-hover">ул. Большая Конюшенная, 11</a></li>
+							</ul>
+						</nav>
+					</div>
+					<div class="footer__column">
+						<div data-spoller class="footer__title">О НАС </div>
+						<nav class="footer__nav">
+							<ul class="footer__list">
+								<li class="footer__item"><a href="#" class="footer__link link-hover">Кто мы</a></li>
+								<li class="footer__item"><a href="#" class="footer__link link-hover">Реквизиты</a></li>
+								<li class="footer__item"><a href="#" class="footer__link link-hover">Отзывы</a></li>
+							</ul>
+						</nav>
+					</div>
+					<div class="footer__column">
+						<div data-spoller class="footer__title">ПАРТНЕРАМ</div>
+						<nav class="footer__nav">
+							<ul class="footer__list">
+								<li class="footer__item"><a href="#" class="footer__link link-hover">Заявка на сотрудничество </a></li>
+								<li class="footer__item"><a href="#" class="footer__link link-hover">Услуги</a></li>
+							</ul>
+						</nav>
+					</div>
+					<div class="footer__column">
+						<div data-spoller class="footer__title">МЫ В СОЦ.СЕТЯХ</div>
+						<div class="footer__actions">
+							<div class="footer__media footer-media">
+								<a href="https:instagram.com" target="_blank" class="footer-media__link"><img src="img/footer/instagram.svg" alt=""></a>
+								<a href="https:/facebook.com" target="_blank" class="footer-media__link"><img src="img/footer/facebook.svg" alt=""></a>
+								<a href="https:/google.com" target="_blank" class="footer-media__link"><img src="img/footer/google.svg" alt=""></a>
+								<a href="https:/youtube.com" target="_blank" class="footer-media__link"><img src="img/footer/youtube.svg" alt=""></a>
+							</div>
+							<div class="footer__payment footer-payment">
+								<div class="footer-payment__title">Мы принимаем</div>
+								<a href="#" class="footer-payment__link"><picture><source srcset="img/footer/visa.webp" type="image/webp"><img src="img/footer/visa.png" alt=""></picture></a>
+								<a href="#" class="footer-payment__link"><picture><source srcset="img/footer/mastercard.webp" type="image/webp"><img src="img/footer/mastercard.png" alt=""></picture></a>
+								<a href="#" class="footer-payment__link"><picture><source srcset="img/footer/paypal.webp" type="image/webp"><img src="img/footer/paypal.png" alt=""></picture></a>
+								<a href="#" class="footer-payment__link"><picture><source srcset="img/footer/unionpay.webp" type="image/webp"><img src="img/footer/unionpay.png" alt=""></picture></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="footer__bottom bottom-footer">
+					<p class="bottom-footer__copy">
+						© Copyright 2020 artmolbert Limited. All rights reserved.
+					</p>
+					<div data-spollers class="bottom-footer__help help-footer">
+						<div class="help-footer__inner">
+							<button type="button" data-spoller class="help-footer__title _icon-arrow">Нужна помощь? </button>
+							<div class="help-footer__body">
+								<form action="#" class="help-footer__form form-help">
+									<div class="form-help__column">
+										<div class="form-help__item">
+											<input id="name" data-error="Ошибка" class="form-help__input" type="text" name="form[]" placeholder="Имя">
+										</div>
+										<div class="form-help__item">
+											<input id="phone" data-error="Ошибка" class="form-help__input" type="text" name="form[]" placeholder="Контактный телефон ">
+										</div>
+										<div class="form-help__item">
+											<label for="Сообщение" class="form-help__label"><span class="form-help__text form-help__email">E-mail </span></label>
+											<input id="Сообщение" data-error="Ошибка" class="form-help__input" type="text" name="form[]" placeholder="roman@mail.com">
+										</div>
+										<div class="form-help__item">
+											<label for="message" class="form-help__label"><span class="form-help__text">Сообщение</span></label>
+											<textarea class="form-help__message" id="message" name="message" rows="5" cols="35"></textarea>
+										</div>
+										<a href="#" class="form-help__btn btn-main">отправить</a>
+										<p class="form-help__note">Общаемся с помощью <a href="#">Cleversite.ru</a></p>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+
+	</div>
+	<div id="popupRegistration" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close _icon-close"></button>
+				<form action="#" class="popup__form popup-form">
+					<div class="popup-form__title">ЗАРЕГиСТРИРОВАТЬСЯ</div>
+					<div class="popup-form__item">
+						<label for="" class="popup-form__label"><span class="popup-form__text">Имя</span></label>
+						<input data-validate data-error="Это поле обязательно для заполнения" class="popup-form__input" type="text" name="form[]" placeholder="Татьяна">
+					</div>
+					<div class="popup-form__item">
+						<label for="" class="popup-form__label"><span class="popup-form__text">Фамилия</span></label>
+						<input data-validate data-error="Это поле обязательно для заполнения" class="popup-form__input" type="text" name="form[]" placeholder="Иванова ">
+					</div>
+					<div class="popup-form__item">
+						<label for="" class="popup-form__label"><span class="popup-form__text">E-mail</span></label>
+						<input data-validate data-required="email" data-error="Введите корректный E-mail" class="popup-form__input" type="text" name="form[]" placeholder="Enter e-mail ">
+					</div>
+					<div class="popup-form__item">
+						<label for="" class="popup-form__label"><span class="popup-form__text">Пароль</span></label>
+						<input autocomplete="off" data-validate data-error="Это поле обязательно для заполнения" class="popup-form__input" type="password" name="form[]" placeholder="* * * * *">
+						<button type="button" class="popup-form__viewpass"></button>
+					</div>
+					<div class="popup-form__item">
+						<a href="#" class="popup-form__btn btn-main">зарегистрироваться</a>
+					</div>
+					<div class="popup-form-media">
+						<div class="popup-form-media__title">Зарегистрироваться c помощью соц.сетей</div>
+						<div class="popup-form-media__item">
+							<a href="#" class="popup-form-media__btn">
+								<img src="img/icons/google.svg" alt="гугл">
+								<span>google</span>
+							</a>
+						</div>
+						<div class="popup-form-media__item">
+							<a href="#" class="popup-form-media__btn">
+								<img src="img/icons/facebook.svg" alt="фейсбук">
+								<span>facebook</span>
+							</a>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<div id="popupBag" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close _icon-close"></button>
+				<div class="popup__bag popup-bag">
+					<div class="popup-bag__content">
+						<div class="popup-bag__title">корзина</div>
+						<div class="popup-bag__item">
+							<div class="popup-bag__img">
+								<picture><source srcset="img/popup/image-1.webp" type="image/webp"><img src="img/popup/image-1.png" alt=""></picture>
+							</div>
+							<div class="popup-bag__text">
+								<div class="popup-bag__name"> 12 линия Васильевского
+									Острова</div>
+								<div class="popup-bag__author">Сергей Усик</div>
+								<ul class="popup-bag__info info-bag">
+									<li class="info-bag__item"><span>Код товара</span> <span>32 55 84 35</span></li>
+									<li class="info-bag__item"><span>Кол-во</span> <span>1</span></li>
+									<li class="info-bag__item"><span>Размер</span> <span>60 x 159 cm</span></li>
+								</ul>
+								<div class="popup-bag__footer">
+									<div class="popup-bag__count">Цена за 1 штуку</div>
+									<div class="popup-bag__price">140 000 ₽</div>
+								</div>
+							</div>
+						</div>
+						<a href="#" class="popup-bag__btn popup-bag__btn_bag">Перейти в корзину</a>
+						<a href="#" class="popup-bag__btn popup-bag__btn_buy">оформить заказ</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/app.min.js?_v=20220530072940"></script>
+</body>
+
+</html>
