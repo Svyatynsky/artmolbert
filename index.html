@@ -9,11 +9,8 @@
 
 <body>
 	<div class="rootpage">
-		<h1>Верстка «template»</h1>
-		<div class="rootpage__info">
-			Особенности проекта
-		</div>
-		<h2>Готовые страницы:</h2>
+		<h1>Верстка «Artmolbert»</h1>
+		<h2>Активные страницы:</h2>
 		<ol class="rootpage__list">
 			<li><a target="_blank" href="home.html">Главная</a></li>
 			<li><a target="_blank" href="collections.html">Коллекции</a></li>
@@ -21,20 +18,13 @@
 			<li><a target="_blank" href="catalog.html">Каталог</a></li>
 			<li><a target="_blank" href="self-presentation.html">Кто мы</a></li>
 		</ol>
-		<h2>Попапы:</h2>
-		<ol class="rootpage__list">
-			<li><a target="_blank" href="home.html#"></a></li>
-		</ol>
-		<div class="rootpage__tnx">
-			<h2>Спасибо за заказ!</h2>
-			<p>Буду рад (а) хорошему отзыву.</p>
-			<p>Обращайтесь еще!</p>
-		</div>
 		<div class="rootpage__contacts">
 			<h2>Мои контакты:</h2>
-			<p>Почта: <a href="mailto:email@gmail.com">email@gmail.com</a></p>
-			<p>Телефон: <a href="tel:8800800800">8 800 800 800</a></p>
-			<p>Соц. сеть: <a href="">ссылка на соц. сеть</a></p>
+			<p>Телеграм: <a href="https://t.me/svyatynsky">Написать в Telegram</a></p>
+			<p>WhatsApp: <a href="https://wa.me/79275968951">Написать в WhatsApp</a></p>
+			<p>Viber: <a href="//chat?number=79275968951">Написать в Viber</a></p>
+			<p>Телефон: <a href="tel:79275968951">7 927 596 89 51</a></p>
+			<p>Почта: <a href="svyatynsky:@gmail.com">email@gmail.com</a></p>
 		</div>
 	</div>
 </body>
@@ -59,7 +49,7 @@
 		min-width: 320px;
 		width: 100%;
 		color: #fff;
-		background-color: #5e5373;
+		background-color: #000;
 	}
 
 	body {
@@ -111,7 +101,7 @@
 	}
 
 	h1 {
-		color: #ebe691;
+		color: #fff;
 		font-size: 2.5rem;
 		margin: 0px 0px 1.25rem 0px;
 	}
@@ -124,7 +114,7 @@
 	}
 
 	h2 {
-		color: #ebe691;
+		color: #fff;
 		font-size: 1.25rem;
 		margin: 0px 0px 1rem 0px;
 	}
@@ -143,41 +133,22 @@
 
 	.rootpage__list {
 		margin: 0px 0px 2.25rem 1.25rem;
-	}
+	}	
 
 	.rootpage__list li:not(:last-child) {
 		margin: 0px 0px 15px 0px;
 	}
 
-	.rootpage__contacts,
-	.rootpage__tnx {
-		border-radius: 200px;
-		padding: 20px 65px;
+	.rootpage__contacts {
 		line-height: 140%;
 	}
-
-	@media (max-width: 767px) {
-
-		.rootpage__contacts,
-		.rootpage__tnx {
-			border-radius: 40px;
-			padding: 20px;
-		}
+	.rootpage__contacts p:not(:last-child) {
+		margin-bottom: 15px;
 	}
-
-	.rootpage__contacts {
-		background: #32b5a4;
-
-	}
-
 	.rootpage__contacts a {
 		color: #ebe691;
 	}
 
-	.rootpage__tnx {
-		background: #c22d63;
-		margin: 0px 0px 1rem 0px;
-	}
 </style>
 
 </html>
